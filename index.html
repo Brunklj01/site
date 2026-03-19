@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudioVisual</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+<img src="Pictures/image-removebg-preview (1).png" alt="Logo">
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Início</a></li>
+<li><a href="pages/portfolio.html">Portfolio</a></li>
+<li><a href="pages/servicos.html">Serviços</a></li>
+<li><a href="pages/sobre.html">Sobre</a></li>
+<li><a href="pages/contacto.html">Contacto</a></li>
+</ul>
+
+<a href="pages/contacto.html#orcamento" class="btn">Pedir Orçamento</a>
+
+</nav>
+</header>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<div class="top-text">
+WEBSITES • VIDEO • FOTOGRAFIA • AUDIOVISUAL
+</div>
+
+<h1>
+Crio a presença digital<br>
+que a sua empresa merece
+</h1>
+
+<p>
+Do desenvolvimento de websites profissionais à edição de vídeo e fotografia.
+Transformo ideias em experiências visuais que impactam e convertem.
+</p>
+
+<div class="hero-buttons">
+<a href="pages/portfolio.html" class="btn">Ver Portfolio</a>
+<a href="pages/servicos.html" class="btn-outline">Os Meus Serviços</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMenu() {
+document.querySelector(".nav-links").classList.toggle("active");
+document.querySelector(".overlay").classList.toggle("active");
+}
+
+function closeMenu() {
+document.querySelector(".nav-links").classList.remove("active");
+document.querySelector(".overlay").classList.remove("active");
+}
+
+</script>
+
+</body>
+</html>
