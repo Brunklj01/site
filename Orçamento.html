@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<title>Pedir Orçamento</title>
 <html lang="pt">
 <head>
-<link href="style.css" type="text/css" rel="stylesheet" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<section id="contacto">
-
+    <title>Pedir Orçamento</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 <div class="overlay" onclick="closeMenu()"></div>
 
+<section id="contacto">
+
+<!-- NAVBAR -->
 <header>
 <nav class="navbar">
 
 <div class="logo">
-<img src="Site/logo2" alt="Logo">
+<img src="Site/logo2.png" alt="Logo">
 </div>
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <ul class="nav-links">
-<a href="index.html">Início</a>
-<a href="Portfolio.html">Portfolio</a>
-<a href="Serviços.html">Serviços</a>
-<a href="Sobre mim.html">Sobre</a>
-<a href="Contacto.html">Contacto</a>
+<li><a href="index.html">Início</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+<li><a href="Serviços.html">Serviços</a></li>
+<li><a href="Sobre mim.html">Sobre</a></li>
+<li><a href="Contacto.html">Contacto</a></li>
 </ul>
 
 <a href="Orçamento.html" class="Orçamento">Pedir Orçamento</a>
@@ -35,9 +36,7 @@
 </nav>
 </header>
 
-
-
-    <!--"pedir orçamento"-->
+<!-- FORM PRINCIPAL -->
 <form id="orcamento" action="https://formspree.io/f/mbdaeqwn" method="POST">
 
     <div class="form-grid">
@@ -69,9 +68,6 @@
                 <option>Outro</option>
             </select>
         </div>
-      
-            </select>
-        </div>
 
         <div class="form-group full">
             <label>Descrição do Projeto</label>
@@ -86,22 +82,20 @@
 
 </form>
 
-        </div>
-    </div>
-
-    <div class="urgente-box">
+<!-- URGENTE -->
+<div class="urgente-box">
     <h2>🚨 Projeto urgente?</h2>
     <p>
         Para projetos com prazo apertado, preencha abaixo.
         Receberá uma resposta prioritária.
     </p>
-<p>(Se precisar de um prazo mais curto, podemos priorizar o seu projeto mediante uma taxa de adicional.) </p>
+    <p>
+        (Se precisar de um prazo mais curto, podemos priorizar o seu projeto mediante uma taxa adicional.)
+    </p>
+
     <form action="https://formspree.io/f/mbdaeqwn" method="POST">
 
-        <!-- ASSUNTO PERSONALIZADO DO EMAIL -->
         <input type="hidden" name="_subject" value="🚨🚨 ORÇAMENTO URGENTE - RESPONDER IMEDIATAMENTE">
-
-        <!-- IDENTIFICADOR INTERNO -->
         <input type="hidden" name="tipo" value="Orçamento Urgente">
 
         <div class="form-group">
@@ -127,6 +121,7 @@
 </div>
 
 </section>
+
 <script>
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
@@ -138,5 +133,6 @@ function closeMenu() {
     document.querySelector(".overlay").classList.remove("active");
 }
 </script>
+
 </body>
 </html>
