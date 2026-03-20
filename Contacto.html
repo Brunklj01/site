@@ -16,7 +16,7 @@
 <nav class="navbar">
 
 <div class="logo">
-<img src="Site/logo2" alt="Logo">
+<img src="img/Projeto logo1.png" alt="Logo">
 </div>
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -29,7 +29,7 @@
 <a href="Contacto.html">Contacto</a>
 </ul>
 
-<a href="Orçamento.html" class="Orçamento">Pedir Orçamento</a>
+<a href="Orçamento.html" class="btn">Pedir Orçamento</a>
 
 </nav>
 </header>
@@ -91,6 +91,18 @@
     </div>
 
 </section>
+<script>
 
+function toggleMenu() {
+document.querySelector(".nav-links").classList.toggle("active");
+document.querySelector(".overlay").classList.toggle("active");
+}
+
+function closeMenu() {
+document.querySelector(".nav-links").classList.remove("active");
+document.querySelector(".overlay").classList.remove("active");
+}
+
+</script>
 </body>
 </html>
