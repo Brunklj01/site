@@ -12,7 +12,7 @@
 <nav class="navbar">
 
 <div class="logo">
-<img src="Pictures/image-removebg-preview (1).png" alt="Logo">
+<img src="img/Projeto logo1.png" alt="Logo">
 </div>
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -25,7 +25,7 @@
 <a href="Contacto.html">Contacto</a>
 </ul>
 
-<a href="Orçamento.html" class="Orçamento">Pedir Orçamento</a>
+<a href="Orçamento.html" class="btn">Pedir Orçamento</a>
 
 </nav> </header>
 <!-- PORTFOLIO --><section id="portfolio">
@@ -46,7 +46,7 @@
             <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
             <div class="portfolio-content">
                 <span class="category">WEBSITES</span>
-                <h3>Site Corporativo - TechStart</h3>
+                <h3>Site Corporativo</h3>
                 <p>Website institucional moderno para empresas.</p>
             </div>
         </div>
@@ -55,32 +55,32 @@
 <div class="portfolio-card">
     
 <video autoplay muted loop playsinline preload="metadata">
-    <source src="Pictures/jump-cut-premier.mp4" type="video/mp4">
+    <source src="img/jump-cut-premier.mp4" type="video/mp4">
     </video>
 
     <div class="portfolio-content">
         <span class="category">VIDEO</span>
-        <h3>Vídeo Promocional - Brand Film</h3>
+        <h3>Vídeo Promocional </h3>
         <p>Edição de Vídeo e Áudio</p>
     </div>
 
 </div>
         <!-- Projeto 3 -->
         <div class="portfolio-card">
-            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="">
+            <img src="img/Projeto logo1.png" alt="">
             <div class="portfolio-content">
-                <span class="category">WEBSITES</span>
-                <h3>Loja Online - ModaExpress</h3>
-                <p>E-commerce completo com sistema de pagamentos.</p>
+                <span class="category">DESIGN</span>
+                <h3>Criação de Logotipos </h3>
+                <p>Criação de logotipos unicos para empresas.</p>
             </div>
         </div>
 
         <!-- Projeto 4 -->
         <div class="portfolio-card">
-            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+            <img src="img/js.jpg" alt="">
             <div class="portfolio-content">
                 <span class="category">FOTOGRAFIA</span>
-                <h3>Retoque Editorial - Fashion Week</h3>
+                <h3>Retoque Editorial </h3>
                 <p>Edição e tratamento fotográfico profissional.</p>
             </div>
         </div>
@@ -88,4 +88,18 @@
     </div>
 
 </section>
+
+<script>
+
+function toggleMenu() {
+document.querySelector(".nav-links").classList.toggle("active");
+document.querySelector(".overlay").classList.toggle("active");
+}
+
+function closeMenu() {
+document.querySelector(".nav-links").classList.remove("active");
+document.querySelector(".overlay").classList.remove("active");
+}
+
+</script>
 </html>
