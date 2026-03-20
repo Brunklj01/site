@@ -11,7 +11,7 @@
 <nav class="navbar">
 
 <div class="logo">
-<img src="Pictures/image-removebg-preview (1).png" alt="Logo">
+<img src="img/Projeto logo1.png" alt="Logo">
 </div>
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -24,7 +24,7 @@
 <a href="Contacto.html">Contacto</a>
 </ul>
 
-<a href="Orçamento.html" class="Orçamento">Pedir Orçamento</a>
+<a href="Orçamento.html" class="btn">Pedir Orçamento</a>
 
 </nav></header>
 <!-- SERVIÇOS -->
@@ -116,5 +116,17 @@ function scrollToSection() {
     document.getElementById("portfolio").scrollIntoView();
 }
 </script>
+<script>
 
+function toggleMenu() {
+document.querySelector(".nav-links").classList.toggle("active");
+document.querySelector(".overlay").classList.toggle("active");
+}
+
+function closeMenu() {
+document.querySelector(".nav-links").classList.remove("active");
+document.querySelector(".overlay").classList.remove("active");
+}
+
+</script>
 </html>
