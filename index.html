@@ -1,81 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 <head>
-<link href="style.css" type="text/css" rel="stylesheet" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StudioVisual</title>
-
-
-
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudioVisual</title>
 </head>
-
 <body>
 
 <div class="overlay" onclick="closeMenu()"></div>
 
 <header>
-<nav class="navbar">
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://res.cloudinary.com/dpodm97yf/image/upload/v1774370432/js_uur68y.jpg" alt="Logo">
+      </a>
+    </div>
 
-<div class="logo">
-<a href="https://ibb.co/zhXvnxcP"><img src="https://i.ibb.co/bgs9WmhN/Captura-de-ecr-2026-03-20-203747.png" alt="Captura de ecrã 2026 03 20 203747" >
-</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
- <ul class="nav-links">
-    <li><a href="index.html">Início</a></li>
-    <li><a href="Portfolio.html">Portfolio</a></li>
-    <li><a href="Serviços.html">Serviços</a></li>
-    <li><a href="Sobre mim.html">Sobre</a></li>
-    <li><a href="Contacto.html">Contacto</a></li>
-  </ul>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="Serviços.html">Serviços</a></li>
+      <li><a href="Sobre mim.html">Sobre</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
 
-  <a href="Orçamento.html" class="btn btn-orcamento">Pedir Orçamento</a>
-
-</nav>
+    <a href="Orçamento.html" class="btn btn-orcamento">Pedir Orçamento</a>
+  </nav>
 </header>
 
-<div class="logo">
-  <a href="index.html">
-<img src="https://res.cloudinary.com/dpodm97yf/image/upload/v1774370432/js_uur68y.jpg" alt="js" >
-</div>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="top-text">WEBSITES • VIDEO • FOTOGRAFIA • AUDIOVISUAL</div>
 
-<div class="top-text">
-WEBSITES • VIDEO • FOTOGRAFIA • AUDIOVISUAL
-</div>
+    <h1>
+      Crio a presença digital<br>
+      que a sua empresa merece
+    </h1>
 
-<h1>
-Crio a presença digital<br>
-que a sua empresa merece
-</h1>
+    <p>
+      Do desenvolvimento de websites profissionais à edição de vídeo e fotografia.
+      Transformo ideias em experiências visuais que impactam e convertem.
+    </p>
 
-<p>
-Do desenvolvimento de websites profissionais à edição de vídeo e fotografia.
-Transformo ideias em experiências visuais que impactam e convertem.
-</p>
-
-<div class="hero-buttons">
-<a href="Portfolio.html" class="btn">Ver Portfolio</a>
-<a href="Serviços.html" class="btn-outline">Os Meus Serviços</a>
-</div>
-
-</div>
-
-</div>
+    <div class="hero-buttons">
+      <a href="Portfolio.html" class="btn">Ver Portfolio</a>
+      <a href="Serviços.html" class="btn-outline">Os Meus Serviços</a>
+    </div>
+  </div>
+</section>
 
 <script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+    document.querySelector(".overlay").classList.toggle("active");
+  }
 
-function toggleMenu() {
-document.querySelector(".nav-links").classList.toggle("active");
-document.querySelector(".overlay").classList.toggle("active");
-}
-
-function closeMenu() {
-document.querySelector(".nav-links").classList.remove("active");
-document.querySelector(".overlay").classList.remove("active");
-}
-
+  function closeMenu() {
+    document.querySelector(".nav-links").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+  }
 </script>
-</body></html>
 
+</body>
+</html>
