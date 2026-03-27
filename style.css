@@ -176,6 +176,24 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Tablet (opcional) */
+@media (max-width: 900px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telemóvel */
+@media (max-width: 600px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .card {
