@@ -875,4 +875,7 @@ textarea:focus {
 
 .fundo{ position: relative; /* Ou absolute */
     z-index: -1;        /* Menor que o elemento da frente */
+    height: 100%;
+    width: 300px;
 }
+
