@@ -884,3 +884,16 @@ textarea:focus {
     inset: 0;
     background: rgba(0,0,0,0.6);
 }
+
+body {
+    position: relative;
+     padding-top: 120px; /* ajusta à altura da navbar */
+}
+
+.top-text,
+h1,
+p,
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+}
