@@ -67,20 +67,6 @@ body {
     opacity: 0.8;
 }
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    background: 
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url('img/js.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-}
 
 .hero-content {
     max-width: 1000px;
@@ -873,9 +859,23 @@ textarea:focus {
   }
 }
 
-.fundo{ position: relative; /* Ou absolute */
-    z-index: -1;        /* Menor que o elemento da frente */
-    height: 100%;
-    width: 300px;
+.fundo {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
 }
 
+.fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* isto é o segredo */
+}
+
+/* overlay escuro para legibilidade */
+.fundo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
