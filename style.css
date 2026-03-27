@@ -861,7 +861,11 @@ textarea:focus {
 
 .fundo {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
     z-index: -2;
     overflow: hidden;
 }
@@ -869,7 +873,8 @@ textarea:focus {
 .fundo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* isto é o segredo */
+    object-fit: cover;
+    display: block; /* 🔥 REMOVE ESPAÇO INVISÍVEL */
 }
 
 /* overlay escuro para legibilidade */
