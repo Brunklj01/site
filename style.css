@@ -67,6 +67,20 @@ body {
     opacity: 0.8;
 }
 
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://res.cloudinary.com/dpodm97yf/image/upload/v1774370432/js_uur68y.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
 
 .hero-content {
     max-width: 1000px;
@@ -859,41 +873,6 @@ textarea:focus {
   }
 }
 
-.fundo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-
-    z-index: -2;
-    overflow: hidden;
-}
-
-.fundo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; /* 🔥 REMOVE ESPAÇO INVISÍVEL */
-}
-
-/* overlay escuro para legibilidade */
-.fundo::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-}
-
-body {
-    position: relative;
-     padding-top: 120px; /* ajusta à altura da navbar */
-}
-
-.top-text,
-h1,
-p,
-.hero-buttons {
-    position: relative;
-    z-index: 2;
+.fundo{ position: relative; /* Ou absolute */
+    z-index: -1;        /* Menor que o elemento da frente */
 }
