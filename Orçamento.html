@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Orçamento</title>
+    <link rel="stylesheet" href="animations.css">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="animations.js"></script>
+</head>
+<body>
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://res.cloudinary.com/dpodm97yf/image/upload/v1774643107/Captura_de_ecr%C3%A3_2026-03-27_202403-removebg-preview_z7p2ok.png" alt="Logo">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+        </ul>
+        <a href="Orçamento.html" class="btn btn-orcamento">Pedir Orçamento</a>
+    </nav>
+</header>
+
+<section id="contacto">
+
+    <form id="orcamento" action="https://formspree.io/f/mbdaeqwn" method="POST">
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" placeholder="O seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="tel" name="telefone" placeholder="+351 912 345 678" required>
+            </div>
+
+            <div class="form-group">
+                <label>Serviço Pretendido</label>
+                <select name="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option>Criação de Website</option>
+                    <option>Edição de Video</option>
+                    <option>Edição de Fotografia</option>
+                    <option>Design Gráfico</option>
+                    <option>Pack Completo</option>
+                    <option>Outro...</option>
+                </select>
+            </div>
+
+            <div class="form-group full">
+                <label>Descrição do Projeto</label>
+                <textarea name="descricao" placeholder="Descreva o que pretende..." required></textarea>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn-primary">
+            Enviar Pedido de Orçamento
+        </button>
+
+    </form>
+
+</section>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+    document.querySelector(".overlay").classList.toggle("active");
+}
+function closeMenu() {
+    document.querySelector(".nav-links").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+</script>
+</body>
+</html>

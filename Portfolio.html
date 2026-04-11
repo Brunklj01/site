@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="animations.js" defer></script>
+</head>
+<body>
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<!-- ══ NAVBAR ══ -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://res.cloudinary.com/dpodm97yf/image/upload/v1774643107/Captura_de_ecr%C3%A3_2026-03-27_202403-removebg-preview_z7p2ok.png" alt="Logo">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+        </ul>
+        <a href="Orçamento.html" class="btn btn-orcamento">Pedir Orçamento</a>
+    </nav>
+</header>
+
+<!-- ══ CAPA ══ -->
+<section class="portcapa"></section>
+
+<!-- ══ CV ══ -->
+<section class="cv-wrapper">
+    <div class="cv-container">
+
+        <!-- Foto -->
+        <div class="cv-card cv-photo-card">
+            <div class="cv-photo-bg"></div>
+            <div class="cv-name-box">Bruno Dias</div>
+        </div>
+
+        <!-- Habilidades -->
+        <div class="cv-card cv-habilidades-card">
+            <div class="cv-label">Habilidades</div>
+            <div class="cv-skill-item">Design</div>
+            <div class="cv-skill-item">Web Development</div>
+            <div class="cv-skill-item">Edição de Vídeo</div>
+            <div class="cv-skill-item">Fotografia</div>
+            <div class="cv-skill-item">Criatividade</div>
+        </div>
+
+        <!-- Softwares -->
+        <div class="cv-card cv-softwares-card">
+            <div class="cv-label">Softwares</div>
+            <div class="cv-software-item"><div class="cv-icon-box1"></div><div class="cv-software-name">Visual Code</div></div>
+            <div class="cv-software-item"><div class="cv-icon-box2"></div><div class="cv-software-name">Figma</div></div>
+            <div class="cv-software-item"><div class="cv-icon-box3"></div><div class="cv-software-name">Premiere</div></div>
+            <div class="cv-software-item"><div class="cv-icon-box4"></div><div class="cv-software-name">Photoshop</div></div>
+            <div class="cv-software-item"><div class="cv-icon-box5"></div><div class="cv-software-name">Lightroom</div></div>
+            <div class="cv-software-item"><div class="cv-icon-box6"></div><div class="cv-software-name">Illustrator</div></div>
+        </div>
+
+        <!-- Sobre Mim -->
+        <div class="cv-card cv-sobre-card">
+            <div class="cv-label">Sobre mim</div>
+            <p>Sou estudante de Técnico Audiovisual na Escola Secundária de Barcelos, com foco em criação de websites (Full Stack Developer), design de logótipos, fotografia e edição de vídeo e imagem.</p>
+            <p>Tenho interesse no desenvolvimento de soluções visuais criativas e funcionais, procurando constantemente melhorar as minhas competências técnicas e explorar novas abordagens no mundo digital.</p>
+            <p>Destaco-me pela criatividade, atenção ao detalhe e vontade de evoluir continuamente.</p>
+        </div>
+
+        <!-- Experiências -->
+        <div class="cv-card cv-experiencias-card">
+            <div class="cv-label">Experiências</div>
+            <div class="cv-skill-item">Projetos Pessoais</div>
+            <div class="cv-skill-item">Projetos Escolares</div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="cv-card cv-contacto-card">
+            <div class="cv-label">Contacto</div>
+            <div class="cv-contact-items">
+                <div class="cv-contact-item">
+                    <div class="cv-icon-box7"></div>
+                    <span>Instagram :<br><a href="https://www.instagram.com/webrun_d.s/" target="_blank">@webrun_d.s</a></span>
+                </div>
+                <div class="cv-contact-item">
+                    <div class="cv-icon-box9"></div>
+                    <span>Telefone :<br>+351 936 950 732</span>
+                </div>
+                <div class="cv-contact-item">
+                    <div class="cv-icon-box8"></div>
+                    <span>Gmail :<br>brun.ds29@Gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══ SHOWCASE / PORTFOLIO ══ -->
+<section id="portfolio">
+<section class="showcase">
+
+    <!-- ESQUERDA -->
+    <div class="sc-left">
+        <img class="star-logo" alt="estrela"
+             src="https://res.cloudinary.com/dpodm97yf/image/upload/v1775924690/imagem_2026-04-11_172448570_wvriv1.png">
+
+        <nav class="sc-nav">
+
+            <div class="nav-item active" data-target="inicio">
+                <div class="nav-row">
+                    <button class="toggle-btn" aria-label="Ativar Início">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <span class="nav-label">Início</span>
+                </div>
+                <div class="nav-desc">
+                    <div class="nav-desc-inner">
+                        <strong>Bruno Dias.</strong>
+                        <p>Designer & Developer criativo com foco em soluções visuais únicas e experiências digitais memoráveis.</p>
+                        <div class="nav-desc-tags"><span>Design</span><span>Web</span><span>Foto</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item" data-target="website">
+                <div class="nav-row">
+                    <button class="toggle-btn" aria-label="Ativar Website">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <span class="nav-label">Website</span>
+                </div>
+                <div class="nav-desc">
+                    <div class="nav-desc-inner">
+                        <strong>Criação de Websites.</strong>
+                        <p>Websites modernos, responsivos e otimizados para SEO. Do design ao deploy, tudo incluído.</p>
+                        <div class="nav-desc-tags"><span>Landing Pages</span><span>E-Commerce</span><span>Full Stack</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item" data-target="video">
+                <div class="nav-row">
+                    <button class="toggle-btn" aria-label="Ativar Vídeo">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <span class="nav-label">Vídeo</span>
+                </div>
+                <div class="nav-desc">
+                    <div class="nav-desc-inner">
+                        <strong>Edição de Vídeo.</strong>
+                        <p>Pós-produção profissional para vídeos corporativos e redes sociais com motion e cor.</p>
+                        <div class="nav-desc-tags"><span>Premiere</span><span>Motion</span><span>Áudio</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item" data-target="design">
+                <div class="nav-row">
+                    <button class="toggle-btn" aria-label="Ativar Design">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <span class="nav-label">Design</span>
+                </div>
+                <div class="nav-desc">
+                    <div class="nav-desc-inner">
+                        <strong>Design Gráfico.</strong>
+                        <p>Identidade visual, logótipos e materiais gráficos com personalidade única para a tua marca.</p>
+                        <div class="nav-desc-tags"><span>Logotipos</span><span>Branding</span><span>Illustrator</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item" data-target="fotografia">
+                <div class="nav-row">
+                    <button class="toggle-btn" aria-label="Ativar Fotografia">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <span class="nav-label">Fotografia</span>
+                </div>
+                <div class="nav-desc">
+                    <div class="nav-desc-inner">
+                        <strong>Fotografia & Retoque.</strong>
+                        <p>Sessões fotográficas e edição profissional para marcas, produtos e eventos com olhar editorial.</p>
+                        <div class="nav-desc-tags"><span>Lightroom</span><span>Photoshop</span><span>Editorial</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- DIREITA — PAINÉIS -->
+    <div class="sc-right">
+
+        <!-- INÍCIO — mete o URL da tua foto 3D -->
+        <div class="sc-panel is-active" data-panel="inicio"
+             style="background-image: url('https://res.cloudinary.com/dpodm97yf/image/upload/v1775863109/foto_cmbxrp.jpg'); background-color:#1a0505;">
+            <div class="sc-panel-body">
+                <p class="sc-panel-tag">Portfolio</p>
+                <h2 class="sc-panel-title">Foto Minha<br>em 3D</h2>
+            </div>
+        </div>
+
+        <!-- WEBSITE — mete o URL da imagem -->
+        <div class="sc-panel" data-panel="website"
+             style="background-image: url(''); background-color:#050d1a;">
+            <div class="sc-panel-body">
+                <p class="sc-panel-tag">Serviço</p>
+                <h2 class="sc-panel-title">Criação de<br>Websites</h2>
+            </div>
+        </div>
+
+        <!-- VÍDEO -->
+        <div class="sc-panel" data-panel="video" style="background-color:#0a0a05;">
+            <video
+                src="https://res.cloudinary.com/dpodm97yf/video/upload/v1774640545/jump-cut-premier_k4xkmg.mp4"
+                controls
+                playsinline
+                preload="metadata"
+                style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+            </video>
+            <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.75) 30%, transparent 100%); z-index:2; pointer-events:none;"></div>
+            <div class="sc-panel-body" style="z-index:3;">
+                <p class="sc-panel-tag">Serviço</p>
+                <h2 class="sc-panel-title">Edição<br>de Vídeo</h2>
+            </div>
+        </div>
+
+        <!-- DESIGN — mete o URL da imagem -->
+        <div class="sc-panel" data-panel="design"
+             style="background-image: url(''); background-color:#0d050a;">
+            <div class="sc-panel-body">
+                <p class="sc-panel-tag">Serviço</p>
+                <h2 class="sc-panel-title">Design<br>Gráfico</h2>
+            </div>
+        </div>
+
+        <!-- FOTOGRAFIA — mete o URL da imagem -->
+        <div class="sc-panel" data-panel="fotografia"
+             style="background-image: url(''); background-color:#05100a;">
+            <div class="sc-panel-body">
+                <p class="sc-panel-tag">Serviço</p>
+                <h2 class="sc-panel-title">Fotografia<br>& Retoque</h2>
+            </div>
+        </div>
+
+    </div>
+</section>
+</section>
+
+<script>
+/* ══ SHOWCASE JS ══ */
+(function () {
+    const SLIDE_DUR = 620;
+    const navItems  = [...document.querySelectorAll('.showcase .nav-item')];
+    let activeIndex = 0;
+    let busy        = false;
+
+    function panelOf(item) {
+        return document.querySelector(`.sc-panel[data-panel="${item.dataset.target}"]`);
+    }
+
+    function goTo(nextItem) {
+        if (busy) return;
+        const nextIndex = navItems.indexOf(nextItem);
+        if (nextIndex === activeIndex) return;
+        busy = true;
+
+        const dir      = nextIndex > activeIndex ? 1 : -1;
+        const outItem  = navItems[activeIndex];
+        const outPanel = panelOf(outItem);
+        const inPanel  = panelOf(nextItem);
+
+        inPanel.style.transition = 'none';
+        inPanel.style.transform  = dir === 1 ? 'translateX(100%)' : 'translateX(-100%)';
+        inPanel.style.opacity    = '0';
+        inPanel.getBoundingClientRect();
+        inPanel.style.transition = '';
+
+        outPanel.style.transform = dir === 1 ? 'translateX(-100%)' : 'translateX(100%)';
+        outPanel.style.opacity   = '0';
+        inPanel.style.transform  = 'translateX(0)';
+        inPanel.style.opacity    = '1';
+
+        outPanel.classList.remove('is-active');
+        inPanel.classList.add('is-active');
+        outItem.classList.remove('active');
+        nextItem.classList.add('active');
+
+        setTimeout(() => {
+            outPanel.style.transform = '';
+            outPanel.style.opacity   = '';
+            activeIndex = nextIndex;
+            busy = false;
+        }, SLIDE_DUR + 80);
+    }
+
+    navItems.forEach(item => item.addEventListener('click', () => goTo(item)));
+})();
+
+/* ══ MENU MOBILE ══ */
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+    document.querySelector(".overlay").classList.toggle("active");
+}
+function closeMenu() {
+    document.querySelector(".nav-links").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
